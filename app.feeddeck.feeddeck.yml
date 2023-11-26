@@ -27,14 +27,14 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        url: https://github.com/feeddeck/feeddeck/releases/download/v1.1.1/feeddeck-linux-x86_64.tar.gz
-        sha256: e342ab342a4eda945fb43419218acc9e3b663c1f86d34b6c1898b69e25e77d51
+        url: https://github.com/feeddeck/feeddeck/releases/download/v1.2.0/feeddeck-linux-x86_64.tar.gz
+        sha256: 809a60f74d82313e27667f343a44e187280190acd8b4b1f4d0ae6c8203809015
         dest: bundle
       - type: archive
         only-arches:
           - aarch64
-        url: https://github.com/feeddeck/feeddeck/releases/download/v1.1.1/feeddeck-linux-arm64.tar.gz
-        sha256: 9e4004adc9bf12c7c38f3717415015c95bd2389000f69d7934624b5b460bf246
+        url: https://github.com/feeddeck/feeddeck/releases/download/v1.2.0/feeddeck-linux-arm64.tar.gz
+        sha256: c23d31c9c00929d6e0202da9c746b8ed53bdd37836ae873fe53786784fdac67f
         dest: bundle
 
     modules:
@@ -99,7 +99,7 @@ modules:
             sources:
               - type: git
                 url: https://code.videolan.org/videolan/x264.git
-                commit: d46938dec10ceab74eb26d281d434fa284c7fbb9
+                commit: c196240409e4d7c01b47448d93b1f9683aaa7cf7
                 x-checker-data:
                   type: json
                   url: https://code.videolan.org/api/v4/projects/536/repository/commits
@@ -138,4 +138,4 @@ modules:
               - type: git
                 url: https://git.ffmpeg.org/ffmpeg.git
                 branch: release/6.0
-                commit: c5039e158d20e85d4d8a2dee3160533d627b839a
+                commit: c41ff724ede7da657762d61097e26fac296c53bf
