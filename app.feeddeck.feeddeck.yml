@@ -27,14 +27,14 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        url: https://github.com/feeddeck/feeddeck/releases/download/v1.2.1/feeddeck-linux-x86_64.tar.gz
-        sha256: 35698d1a1cbbe2da32735d07934a986bce2b897db3c1076ccc6c1d8209723af8
+        url: https://github.com/feeddeck/feeddeck/releases/download/v1.3.0/feeddeck-linux-x86_64.tar.gz
+        sha256: fe779ad735626b562f7b2127620117f4319a1873cfe6789b26d540a7df4a9c1c
         dest: bundle
       - type: archive
         only-arches:
           - aarch64
-        url: https://github.com/feeddeck/feeddeck/releases/download/v1.2.1/feeddeck-linux-arm64.tar.gz
-        sha256: 39959e10d119364175f172852dc2e73ee5a9192759edb7182f74a6f288dcb6d9
+        url: https://github.com/feeddeck/feeddeck/releases/download/v1.3.0/feeddeck-linux-arm64.tar.gz
+        sha256: 21120ed3f3caf215b3fb066f00bbafa5d7fcf9d073c2410e31559e001b7921ca
         dest: bundle
 
     modules:
