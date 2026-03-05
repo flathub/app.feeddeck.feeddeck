@@ -1,6 +1,6 @@
 app-id: app.feeddeck.feeddeck
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: feeddeck
 
@@ -20,7 +20,7 @@ modules:
       - cp -R bundle /app/feeddeck
       - mkdir -p /app/bin && ln -s /app/feeddeck/feeddeck /app/bin/feeddeck
       - chmod +x /app/bin/feeddeck
-      - install -Dm644 /app/feeddeck/app.feeddeck.feeddeck.svg /app/share/icons/hicolor/scalable/apps/app.feeddeck.feeddeck.svg
+      - install -Dm644 /app/feeddeck/app.feeddeck.feeddeck.svg -t /app/share/icons/hicolor/scalable/apps/
       - install -Dm644 /app/feeddeck/app.feeddeck.feeddeck.desktop -t /app/share/applications/
       - install -Dm644 /app/feeddeck/app.feeddeck.feeddeck.metainfo.xml -t /app/share/metainfo/
     sources:
@@ -137,6 +137,7 @@ modules:
             config-opts:
               - -DCMAKE_BUILD_TYPE=Release
               - -DBUILD_STATIC=0
+              - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
             cleanup:
               - /bin
               - /include
